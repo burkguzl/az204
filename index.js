@@ -12,6 +12,8 @@ app.get('/api/hello', async (req, res) => {
 
 app.get('/api/env', async (req, res) => {
 
+    //azure app service 
+
     const fbSecret = process.env.facebook_secret
 
     const text = JSON.stringify(process.env)
